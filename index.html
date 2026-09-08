@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  
+<!-- Mirrored from web.archive.org/web/20260408173909/https://odediary.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 09 May 2026 16:11:04 GMT -->
+<head><script type="text/javascript" src="../../../../../web-static.archive.org/_static/js/bundle-playback5ab0.js?v=oZ57VlYl" charset="utf-8"></script>
+<script type="text/javascript" src="../../../../../web-static.archive.org/_static/js/wombat9b8c.js?v=txqj7nKC" charset="utf-8"></script>
+<script>window.RufflePlayer=window.RufflePlayer||{};window.RufflePlayer.config={"autoplay":"on","unmuteOverlay":"hidden","showSwfDownload":true};</script>
+<script type="text/javascript" src="../../../../../web-static.archive.org/_static/js/ruffle/ruffle.js"></script>
+<script type="text/javascript">
+    __wm.init("https://web.archive.org/web");
+  __wm.wombat("https://odediary.com/","20260408173909","https://web.archive.org/","web","https://web-static.archive.org/_static/",
+	      "1775669949");
+</script>
+<link rel="stylesheet" type="text/css" href="../../../../../web-static.archive.org/_static/css/banner-styles074f.css?v=1utQkbB3" />
+<link rel="stylesheet" type="text/css" href="../../../../../web-static.archive.org/_static/css/iconochive29a7.css?v=3PDvdIFv" />
+<!-- End Wayback Rewrite JS Include -->
+
+    <!-- Google Tag Manager -->
+<!--    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':-->
+<!--              new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],-->
+<!--            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=-->
+<!--            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);-->
+<!--    })(window,document,'script','dataLayer','GTM-KQQM52TM');</script>-->
+    <!-- End Google Tag Manager -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://web.archive.org/web/20260408173909js_/https://www.googletagmanager.com/gtag/js?id=G-SBGLBVX1HN"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-SBGLBVX1HN');
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <meta charset="utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>odediary</title>
+    <link rel="shortcut icon" href="https://web.archive.org/web/20260408173909im_/https://odediary.com/TemplateData/favicon.ico"/>
+    <link rel="stylesheet" href="../../../20260408173909cs_/https_/odediary.com/TemplateData/style.css"/>
+    <link rel="manifest" href="manifest.webmanifest"/>
+  </head>
+  <body>
+  <!-- Google Tag Manager (noscript) -->
+<!--  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQQM52TM"-->
+<!--                    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>-->
+  <!-- End Google Tag Manager (noscript) -->
+     
+    <div id="unity-container">
+      <canvas id="unity-canvas" width="960" height="600" tabindex="-1"></canvas>
+      <div id="unity-loading-bar">
+        <div id="unity-progress-bar-empty">
+          <div id="unity-progress-bar-full"></div>
+        </div>
+      </div>
+      <div id="unity-warning"></div>
+    </div>
+    <script>
+            window.addEventListener("load", function () {
+              if ("serviceWorker" in navigator) {
+                navigator.serviceWorker.register("ServiceWorker.html");
+              }
+            });
+
+            var container = document.querySelector("#unity-container");
+            var canvas = document.querySelector("#unity-canvas");
+            var loadingBar = document.querySelector("#unity-loading-bar");
+            var progressBarFull = document.querySelector("#unity-progress-bar-full");
+            var warningBanner = document.querySelector("#unity-warning");
+
+            // Shows a temporary message banner/ribbon for a few seconds, or
+            // a permanent error message on top of the canvas if type=='error'.
+            // If type=='warning', a yellow highlight color is used.
+            // Modify or remove this function to customize the visually presented
+            // way that non-critical warnings and error messages are presented to the
+            // user.
+            function unityShowBanner(msg, type) {
+              function updateBannerVisibility() {
+                warningBanner.style.display = warningBanner.children.length ? 'block' : 'none';
+              }
+              var div = document.createElement('div');
+              div.innerHTML = msg;
+              warningBanner.appendChild(div);
+              if (type == 'error') div.style = 'background: red; padding: 10px;';
+              else {
+                if (type == 'warning') div.style = 'background: yellow; padding: 10px;';
+                setTimeout(function() {
+                  warningBanner.removeChild(div);
+                  updateBannerVisibility();
+                }, 5000);
+              }
+              updateBannerVisibility();
+            }
+
+            var buildUrl = "Build";
+            var loaderUrl = buildUrl + "/Build.loader.js?v=1.0";
+            var config = {
+              arguments: [],
+              dataUrl: buildUrl + "/Build.data.unityweb?v=1.0",
+              frameworkUrl: buildUrl + "/Build.framework.js.unityweb?v=1.0",
+              codeUrl: buildUrl + "/Build.wasm.unityweb?v=1.0",
+              streamingAssetsUrl: "StreamingAssets",
+              companyName: "DefaultCompany",
+              productName: "odediary",
+              productVersion: "1.0",
+              showBanner: unityShowBanner,
+            };
+
+            // By default Unity keeps WebGL canvas render target size matched with
+            // the DOM size of the canvas element (scaled by window.devicePixelRatio)
+            // Set this to false if you want to decouple this synchronization from
+            // happening inside the engine, and you would instead like to size up
+            // the canvas DOM size and WebGL render target sizes yourself.
+            // config.matchWebGLToCanvasSize = false;
+
+            if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+              // Mobile device style: fill the whole browser client area with the game canvas:
+              var meta = document.createElement('meta');
+              meta.name = 'viewport';
+              meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
+              document.getElementsByTagName('head')[0].appendChild(meta);
+            }
+
+            loadingBar.style.display = "block";
+
+            var script = document.createElement("script");
+            script.src = loaderUrl;
+            script.onload = () => {
+              createUnityInstance(canvas, config, (progress) => {
+                progressBarFull.style.width = 100 * progress + "%";
+              }).then((unityInstance) => {
+                window.unityInstance = unityInstance;
+                loadingBar.style.display = "none";
+              }).catch((message) => {
+                alert(message);
+              });
+            };
+            document.body.appendChild(script);
+    </script>
+  </body>
+
+<!-- Mirrored from web.archive.org/web/20260408173909/https://odediary.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 09 May 2026 16:11:10 GMT -->
+</html>
+<!--
+     FILE ARCHIVED ON 17:39:09 Apr 08, 2026 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 16:11:03 May 09, 2026.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 0.348
+  exclusion.robots: 0.038
+  exclusion.robots.policy: 0.032
+  esindex: 0.007
+  cdx.remote: 10.042
+  LoadShardBlock: 90.027 (3)
+  PetaboxLoader3.datanode: 119.089 (4)
+  PetaboxLoader3.resolve: 75.195 (2)
+  load_resource: 137.613
+-->
